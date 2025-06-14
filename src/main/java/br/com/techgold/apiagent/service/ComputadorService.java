@@ -54,13 +54,19 @@ public class ComputadorService {
 	@Transactional
 	public void atualizaComputador(DadosComputador dto, Cliente cliente) {
 		Computador computador = repository.findBySerial(dto.serial());
-		computador.setCliente(cliente);
 		computador.setName(dto.name());
-	    computador.setOs(dto.os());
-	    computador.setCpu(dto.cpu());
+		computador.setMac(dto.mac());
+		computador.setOs(dto.os());
+		computador.setOsVersion(dto.osVersion());
+		computador.setOsBuildNumber(dto.osBuildNumber());
+		computador.setOsArchitecture(dto.osArchitecture());
+		computador.setTimeZone(dto.timeZone());
+		computador.setCpu(dto.cpu());
+		computador.setCpuFrequencyGHz(dto.cpuFrequencyGHz());
+		computador.setCliente(cliente);
 	    computador.setRam(dto.ram());
 	    computador.setDisk(dto.disk());
-	    computador.setMac(dto.mac());
+	    computador.setDiskAvailable(dto.diskAvailable());
 	    computador.setPlatform(dto.platform());
 	    computador.setLast_boot_time(dto.lastBootTime());
 	    computador.setLast_seen(dto.lastSeen());
@@ -70,15 +76,15 @@ public class ComputadorService {
 	    computador.setManufacturer(dto.manufacturer());
 	    computador.setAddress(dto.address());
 	    computador.setUsername(dto.username());
-	    computador.setOsVersion(dto.osVersion());
-	    computador.setOsBuildNumber(dto.osBuildNumber());
-	    computador.setOsArchitecture(dto.osArchitecture());
-	    computador.setTimeZone(dto.timeZone());
-	    computador.setCpuFrequencyGHz(dto.cpuFrequencyGHz());
 	    computador.setRamAvailable(dto.ramAvailable());
 	    computador.setIpAddresses(dto.ipAddresses());
 	    computador.setNetworkSpeedMbps(dto.networkSpeedMbps());
 	    computador.setSystemUptimeSeconds(dto.systemUptimeSeconds());
+	    computador.setDomain(dto.domain());
+	    computador.setDeviceType(dto.deviceType());
+	    computador.setDevice_name(dto.device_name());
+	    
+	    
 	}
 	
 
