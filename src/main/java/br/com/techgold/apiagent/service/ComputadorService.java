@@ -46,8 +46,8 @@ public class ComputadorService {
 	}
 	
 	
-	public boolean existePorSerial(String serial) {
-		return repository.existsBySerial(serial);
+	public boolean existePorSerial(String serial, String name) {
+		return repository.existsBySerialAndName(serial, name);
 	}
 
 
