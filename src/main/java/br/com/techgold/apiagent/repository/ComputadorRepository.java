@@ -10,6 +10,4 @@ public interface ComputadorRepository extends JpaRepository<Computador, Long>{
 
 	public Computador findBySerial(String serial);
 
-	public boolean existsBySerialAndName(String serial, String name);
-
 }
