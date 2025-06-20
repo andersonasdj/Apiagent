@@ -49,7 +49,9 @@ public record DadosComputador(
 	    String uuid,
 	    boolean isVirtualMachine,
 	    String domain,
-	    String deviceType
+	    String deviceType,
+	    String antivirus,
+	    List<String> bitlockerRecoveryKeys
 		
 		) {
 

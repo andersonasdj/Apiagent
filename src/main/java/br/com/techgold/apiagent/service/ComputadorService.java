@@ -42,6 +42,8 @@ public class ComputadorService {
 		    computador.setIpAddresses(dto.ipAddresses());
 		    computador.setNetworkSpeedMbps(dto.networkSpeedMbps());
 		    computador.setSystemUptimeSeconds(dto.systemUptimeSeconds());
+		    computador.setAntivirus(dto.antivirus());
+		    computador.setBitlockerRecoveryKeys(dto.bitlockerRecoveryKeys());
 		    repository.save(computador);
 	}
 	
@@ -83,6 +85,8 @@ public class ComputadorService {
 	    computador.setDomain(dto.domain());
 	    computador.setDeviceType(dto.deviceType());
 	    computador.setDevice_name(dto.device_name());
+	    computador.setAntivirus(dto.antivirus());
+	    computador.setBitlockerRecoveryKeys(dto.bitlockerRecoveryKeys());
 	    
 	    
 	}
