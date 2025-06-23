@@ -51,7 +51,9 @@ public record DadosComputador(
 	    String domain,
 	    String deviceType,
 	    String antivirus,
-	    List<String> bitlockerRecoveryKeys
+	    List<String> bitlockerRecoveryKeys,
+	    boolean storageMonitor,
+	    boolean statusMonitor
 		
 		) {
 

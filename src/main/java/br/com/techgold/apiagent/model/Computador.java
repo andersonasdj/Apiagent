@@ -124,6 +124,8 @@ public class Computador {
     private String deviceType;
     private String antivirus;
     private List<String> bitlockerRecoveryKeys;
+    private boolean storageMonitor;
+    private boolean statusMonitor;
     
 	
 }
