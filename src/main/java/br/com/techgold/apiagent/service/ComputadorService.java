@@ -74,7 +74,7 @@ public class ComputadorService {
 
 	@Transactional
 	public void atualizaComputador(DadosComputador dto, Cliente cliente) {
-		Computador computador = repository.findBySerial(dto.serial());
+		Computador computador = repository.findByName(dto.name());
 		computador.setAntivirus(dto.antivirus());
 		computador.setAddress(dto.address());
 		computador.setBitlockerRecoveryKeys(dto.bitlockerRecoveryKeys());
