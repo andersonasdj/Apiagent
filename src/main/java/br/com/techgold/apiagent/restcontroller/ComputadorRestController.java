@@ -28,7 +28,7 @@ public class ComputadorRestController {
 		 String token = recuperarToken(request);
 		 Cliente cliente = clienteService.buscaPorToken(token);
 		 
-		if(service.existePorSerial(dto.uuid(), dto.name()) && cliente != null) {
+		if(service.existePorSerial(dto.serial(), dto.name()) && cliente != null) {
 			service.atualizaComputador(dto, cliente);	//ATUALIZA UM JÀ EXISTENTE
 			return ResponseEntity.ok().build();
 		}if (cliente != null) {
