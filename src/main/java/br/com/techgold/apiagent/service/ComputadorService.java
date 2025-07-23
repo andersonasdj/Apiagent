@@ -63,6 +63,10 @@ public class ComputadorService {
 	public boolean existePorSerial(String serial, String name) {
 		return repository.existsBySerialAndName(serial, name);
 	}
+	
+	public boolean existePorUuid(String uuid, String name) {
+		return repository.existsByUuidAndName(uuid, name);
+	}
 
 	@Transactional
 	public void atualizaComputador(DadosComputador dto, Cliente cliente) {
