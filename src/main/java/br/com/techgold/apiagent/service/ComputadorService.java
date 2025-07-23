@@ -67,6 +67,10 @@ public class ComputadorService {
 	public boolean existePorUuid(String uuid, String name) {
 		return repository.existsByUuidAndName(uuid, name);
 	}
+	
+	public boolean existeHostname(String name) {
+		return repository.existsByName(name);
+	}
 
 	@Transactional
 	public void atualizaComputador(DadosComputador dto, Cliente cliente) {

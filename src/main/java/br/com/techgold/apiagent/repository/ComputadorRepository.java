@@ -13,6 +13,8 @@ public interface ComputadorRepository extends JpaRepository<Computador, Long>{
 	public boolean existsBySerialAndName(String serial, String name);
 	
 	public boolean existsByUuidAndName(String uuid, String name);
+
+	public boolean existsByName(String name);
 	
 	
 	
