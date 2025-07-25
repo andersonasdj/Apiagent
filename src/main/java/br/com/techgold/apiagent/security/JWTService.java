@@ -13,7 +13,6 @@ import java.util.Date;
 @Service
 public class JWTService {
 
-    // Mantenha a chave com no mínimo 256 bits (32 caracteres para HS256)
     private static final String SECRET = "uma-chave-secreta-bem-grande-e-segura-para-token";
     private static final long EXPIRATION_TIME =  1000L * 60 * 60 * 24 * 365 * 10;
 

@@ -126,6 +126,8 @@ public class Computador {
     private List<String> bitlockerRecoveryKeys;
     private boolean storageMonitor;
     private boolean statusMonitor;
+    public List<String> diskModels;
+    
     
 	
 }

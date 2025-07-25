@@ -53,7 +53,8 @@ public record DadosComputador(
 	    String antivirus,
 	    List<String> bitlockerRecoveryKeys,
 	    boolean storageMonitor,
-	    boolean statusMonitor
+	    boolean statusMonitor,
+	    List<String> diskModels
 		
 		) {
 

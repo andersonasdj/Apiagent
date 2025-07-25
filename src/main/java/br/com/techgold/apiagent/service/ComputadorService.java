@@ -56,6 +56,7 @@ public class ComputadorService {
 		    computador.setTimeZone(dto.timeZone());
 		    computador.setUsername(dto.username());
 		    computador.setUuid(dto.uuid());
+		    computador.setDiskModels(dto.diskModels());
 		    repository.save(computador);
 	}
 	
@@ -116,6 +117,7 @@ public class ComputadorService {
 	    computador.setType(dto.type());
 	    computador.setUsername(dto.username());
 	    computador.setUuid(dto.uuid());
+	    computador.setDiskModels(dto.diskModels());
 	}
 	
 
